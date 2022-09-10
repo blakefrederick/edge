@@ -1,2 +1,1 @@
-# edge
-Trying out Nex.js Edge API Routes (Beta)
+A readme explaining that I'm just testing out a Next.js feature.
