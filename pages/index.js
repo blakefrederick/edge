@@ -36,6 +36,20 @@ export default function Home() {
               <p>Edge API Routes (Beta)</p>
             </a>
           </Link>
+
+          <Link href="/api/odysseyslow" className={styles.card}>
+            <a>
+              <h2>Homer's Odyssey &rarr;</h2>
+              <p>Slow</p>
+            </a>
+          </Link>
+
+          <Link href="/api/odysseyfast" className={styles.card}>
+            <a>
+              <h2>Homer's Odyssey &rarr;</h2>
+              <p>Fast(er)</p>
+            </a>
+          </Link>
         </div>
       </main>
 
