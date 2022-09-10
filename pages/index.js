@@ -3,7 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export const getServerSideProps = ({ query }) => ({
+  props: query
+})
+
+export default function Home({ from_middleware }) {
+  console.log(from_middleware)
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +18,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        { from_middleware &&
+          <p className={styles.description}>
+            <code className={styles.code}>Redirected from /redirect!</code>
+          </p>
+        }
         <h1 className={styles.title}>
           Hey <a href="https://blakefrederick.com">-</a>
         </h1>
